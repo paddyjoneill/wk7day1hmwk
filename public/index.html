@@ -19,12 +19,14 @@
         <label for="new-todo">New To Do:</label>
         <input type="text" id="new-todo" v-model="newTodo">
         <br>
+        <br>
         <label for="highpriority">High Priority</label>
         <input type="radio" id="highpriority" value="high" v-model="newPriority">
         <label for="lowpriority">Low Priority</label>
         <input type="radio" id="lowpriority" value="low" checked v-model="newPriority" >
         <br>
-        <input type="submit" value="Add Todo">
+        <br>
+        <input type="submit" value="Add Todo" id="submit-button">
       </form>
     </div>
 

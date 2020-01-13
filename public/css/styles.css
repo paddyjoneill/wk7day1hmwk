@@ -29,13 +29,13 @@ li button {
   cursor: pointer;
 }
 
-li.purchased {
-  border: 2px solid #1a681e;
-  color: #1a681e;
+li.highpriority {
+  border: 2px solid red;
+  color: red;
 }
 
-li.not-purchased {
-  border: 2px solid #f2360c;
+li.lowpriority {
+  border: 2px solid blue;
 }
 
 input[type="text"] {

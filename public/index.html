@@ -10,7 +10,7 @@
   <body>
     <div id="app">
       <ul>
-        <li v-for="todo in todos">
+        <li v-for="todo in todos" v-bind:class="todo.priority==='high' ? 'highpriority':'lowpriority'">
           <span>{{ todo.name }}</span>
           <span>Priority: {{todo.priority}}</span>
         </li>

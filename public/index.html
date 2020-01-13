@@ -10,11 +10,20 @@
   <body>
     <div id="app">
       <ul>
-        <li v-for="todo in todos">{{ todo }}</li>
+        <li v-for="todo in todos">
+          <span>{{ todo.name }}</span>
+          <span>Priority: {{todo.priority}}</span>
+        </li>
       </ul>
       <form v-on:submit.prevent="addTodo">
         <label for="new-todo">New To Do:</label>
         <input type="text" id="new-todo" v-model="newTodo">
+        <br>
+        <label for="highpriority">High Priority</label>
+        <input type="radio" name="highpriority" value="high">
+        <label for="lowpriority">Low Priority</label>
+        <input type="radio" name="lowpriority" value="low">
+        <br>
         <input type="submit" value="Add Todo">
       </form>
     </div>

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Shopping List</title>
+    <title>To Do List List</title>
     <script src="./js/bundle.js" ></script>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -20,9 +20,9 @@
         <input type="text" id="new-todo" v-model="newTodo">
         <br>
         <label for="highpriority">High Priority</label>
-        <input type="radio" name="highpriority" value="high">
+        <input type="radio" id="highpriority" value="high" v-model="newPriority">
         <label for="lowpriority">Low Priority</label>
-        <input type="radio" name="lowpriority" value="low">
+        <input type="radio" id="lowpriority" value="low" checked v-model="newPriority" >
         <br>
         <input type="submit" value="Add Todo">
       </form>

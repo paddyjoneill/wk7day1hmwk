@@ -8,11 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
       todos: [{name:"Buy Shopping", priority: "low"},
               {name:"Wash Car", priority: "high"},
               {name:"Do Laundry", priority: "low"}],
-      newTodo: ""
+      newTodo: "",
+      newPriority: "low"
     },
     methods: {
       addTodo: function() {
-        this.todos.push({name:this.newTodo, priority:"low"});
+        this.todos.push({name:this.newTodo, priority:this.newPriority});
         this.newTodo = ""
       }
     }

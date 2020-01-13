@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
+    <div id="app">
+      <ul>
+        <li v-for="todo in todos">{{ todo }}</li>
+      </ul>
+      <form v-on:submit.prevent="addTodo">
+        <label for="new-todo">New To Do:</label>
+        <input type="text" id="new-todo" v-model="newTodo">
+        <input type="submit" value="Add Todo">
+      </form>
+    </div>
 
   </body>
 </html>
